@@ -18,9 +18,11 @@ connectCloudinary()
 app.use(express.json())
 app.use(cors({
     origin: [
-        'http://localhost:5174', // Local development
+        'http://localhost:5173', // Frontend local development
+        'http://localhost:5174', // Admin local development
         'http://localhost:3000', // Alternative local port
-        'https://ecommerece-forever.vercel.app' // Production Vercel deployment
+        'https://ecommerece-forever.vercel.app', // Frontend Vercel deployment
+        /.*\.vercel\.app$/ // Allow any Vercel deployment (including admin)
     ],
     credentials: true
 }))
