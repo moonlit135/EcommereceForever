@@ -16,7 +16,14 @@ connectCloudinary()
 
 // middlewares
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: [
+        'http://localhost:5173', // Local development
+        'http://localhost:3000', // Alternative local port
+        'https://ecommerece-forever.vercel.app' // Production Vercel deployment
+    ],
+    credentials: true
+}))
 
 // api endpoints
 app.use('/api/user',userRouter)
