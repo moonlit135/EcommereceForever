@@ -18,7 +18,7 @@ connectCloudinary()
 app.use(express.json())
 app.use(cors({
     origin: [
-        'http://localhost:5173', // Local development
+        'http://localhost:5174', // Local development
         'http://localhost:3000', // Alternative local port
         'https://ecommerece-forever.vercel.app' // Production Vercel deployment
     ],
@@ -35,4 +35,18 @@ app.get('/',(req,res)=>{
     res.send("API Working")
 })
 
-app.listen(5000, () => console.log('Server started on PORT 5000'));
+// Test route
+app.get('/test',(req,res)=>{
+    res.json({
+        message: "Backend server is working!",
+        timestamp: new Date().toISOString(),
+        port: port
+    })
+})
+
+app.listen(port, () => {
+    console.log(`🚀 Server started successfully!`)
+    console.log(`📍 Server running at: http://localhost:${port}`)
+    console.log(`🧪 Test endpoint: http://localhost:${port}/test`)
+    console.log(`📊 API endpoints available at: http://localhost:${port}/api/`)
+});
