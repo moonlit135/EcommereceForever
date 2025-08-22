@@ -2,8 +2,8 @@
 
 This is an E-Commerce web application built using modern technologies to provide a seamless shopping experience. Users can browse products, add them to the cart, and make payments using integrated payment gateways.
 
-## Live Demo:https://ecommerece-forever.vercel.app/
-## Live Demo(Admin Dashboard):https://ecommerece-forever-admin.vercel.app/
+## Live Demo: https://ecommerece-forever.vercel.app/
+## Live Demo(Admin Dashboard): https://ecommerece-forever-admin.vercel.app/
 
 ## Features
 
