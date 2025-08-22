@@ -2,6 +2,9 @@
 
 This is an E-Commerce web application built using modern technologies to provide a seamless shopping experience. Users can browse products, add them to the cart, and make payments using integrated payment gateways.
 
+## Live Demo:https://ecommerece-forever.vercel.app/
+## Live Demo(Admin Dashboard):https://ecommerece-forever-admin.vercel.app/
+
 ## Features
 
 - **User Authentication**: Users can register and log in to their accounts.
@@ -16,5 +19,4 @@ This is an E-Commerce web application built using modern technologies to provide
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Authentication**: JWT (JSON Web Tokens)
-- **Payment Integration**: Stripe, Razorpay
 - **Cloud Storage**: Cloudinary (for storing product images)
